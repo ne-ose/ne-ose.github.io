@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Néose — poèmes</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪶</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@200;300&family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="accueil" id="accueil" hidden>
+    <h1 class="accueil-logo">néose<span class="point">.</span></h1>
+    <nav class="accueil-categories" id="accueil-categories" aria-label="Catégories"></nav>
+  </section>
+
+  <div class="page" id="page">
+    <aside class="panneau">
+      <div class="panneau-haut">
+        <a class="logo" href="#" aria-label="Accueil">néose<span class="point">.</span></a>
+        <div class="titres">
+          <h1 class="titre-petit" id="titre-petit"></h1>
+          <div class="titre" id="titre" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="meta"><span id="meta-serie"></span><span id="meta-date"></span></div>
+    </aside>
+
+    <main class="lecture">
+      <div class="barre">
+        <button class="btn-liste" id="btn-liste" type="button" aria-expanded="false" aria-controls="tiroir">
+          <span class="burger" aria-hidden="true"></span>Poèmes
+        </button>
+        <nav class="categories" id="categories" aria-label="Catégories"></nav>
+        <div class="menu-cat" id="menu-cat" hidden></div>
+      </div>
+      <div class="corps" id="corps">
+        <div class="col-texte">
+          <article class="poeme" id="poeme"></article>
+          <button class="voir-post" id="voir-post" type="button" hidden>Voir le post d'origine</button>
+        </div>
+      </div>
+      <nav class="suite">
+        <a id="prec" class="prec" href="#"><span class="saut" id="prec-saut"></span><span id="prec-titre"></span></a>
+        <button type="button" class="cat-pied" id="cat-pied"></button>
+        <a id="suiv" class="suiv" href="#"><span class="suiv-texte"><span class="saut" id="suiv-saut"></span><span id="suiv-titre"></span></span><span class="rond">→</span></a>
+      </nav>
+    </main>
+  </div>
+
+  <button type="button" class="btn-visuel" id="btn-visuel" aria-expanded="false" aria-controls="visuel" hidden>
+    <span class="fleche" aria-hidden="true">←</span><span id="btn-visuel-texte">Voir l'œuvre</span>
+  </button>
+  <figure class="visuel" id="visuel" hidden></figure>
+
+  <div class="voile" id="voile" hidden></div>
+  <aside class="tiroir" id="tiroir" aria-label="Poèmes par catégorie" aria-hidden="true">
+    <div class="tiroir-haut">
+      <span class="tiroir-titre">Poèmes</span>
+      <button type="button" class="fermer" id="fermer">Fermer ✕</button>
+    </div>
+    <div class="tri" role="group" aria-label="Trier">
+      <button type="button" data-tri="date" class="actif">Date</button>
+      <button type="button" data-tri="az">A–Z</button>
+    </div>
+    <div class="tiroir-cats" id="tiroir-cats"></div>
+  </aside>
+
+  <div class="original" id="original" hidden>
+    <button type="button" class="fermer-original" id="fermer-original">Fermer ✕</button>
+    <div class="original-images" id="original-images"></div>
+  </div>
+
+  <script src="poemes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

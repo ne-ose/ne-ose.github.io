@@ -1,0 +1,199 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#121115;color:#ECE8DF}
+body{font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+::selection{background:var(--accent-ui,var(--accent));color:#121115}
+
+.page{--fond:#1F4A52;--accent:#9FE3D3;display:grid;grid-template-columns:minmax(320px,34%) 1fr;min-height:100vh}
+
+.panneau{background:var(--fond);color:var(--accent);padding:32px 40px 36px;display:flex;flex-direction:column;justify-content:space-between;position:sticky;top:0;height:100vh;transition:background .5s}
+.panneau-haut{display:flex;flex-direction:column;gap:clamp(28px,5vh,56px)}
+.logo{font:700 22px 'Space Grotesk';letter-spacing:-.02em;color:var(--panneau-texte,#F4F0E6)}
+.point{color:var(--accent)}
+/* Titre : petit titre fin + titre géant ton sur ton */
+.panneau{overflow:hidden}
+.panneau-haut{flex:1;min-height:0;overflow:hidden}
+.titres{display:flex;flex-direction:column;gap:clamp(12px,2vh,24px)}
+.titre-petit{margin:0;font:200 clamp(34px,3.6vw,56px)/1.05 'Inter',system-ui,sans-serif;letter-spacing:-.01em;color:var(--accent)}
+.titre{font:400 clamp(150px,22vw,320px)/.88 'Anton','Bebas Neue',Impact,sans-serif;letter-spacing:-.01em;
+  color:color-mix(in srgb,var(--fond) 84%,var(--panneau-texte,#F4F0E6));
+  hyphens:manual;-webkit-hyphens:manual;hyphenate-character:"";-webkit-hyphenate-character:"";overflow-wrap:break-word;user-select:none}
+.meta{display:flex;justify-content:space-between;gap:16px;font:500 12px 'JetBrains Mono';letter-spacing:.06em;text-transform:uppercase;color:var(--panneau-texte,#F4F0E6)}
+
+.lecture{padding:32px 64px 36px clamp(48px,8vw,120px);display:grid;grid-template-rows:auto 1fr auto;min-height:100vh}
+.barre{display:flex;justify-content:space-between;align-items:center;gap:16px 24px;flex-wrap:wrap;font:500 13px 'Space Grotesk'}
+.serie-nom{color:#8d8996}
+.btn-index{border:1px solid #3a3842;border-radius:999px;padding:8px 16px;display:flex;gap:10px;align-items:center;transition:border-color .2s}
+.btn-index:hover{border-color:var(--accent)}
+kbd{font:400 11px 'JetBrains Mono';color:#8d8996}
+
+.corps{align-self:center;display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start;padding:48px 0}
+.corps.avec-visuel{grid-template-columns:minmax(0,36ch) minmax(0,1fr)}
+.poeme{font:400 28px/1.45 'Cormorant Garamond',Georgia,serif;display:flex;flex-direction:column;gap:24px;max-width:36ch}
+.poeme p{margin:0}
+.poeme em{color:var(--accent)}
+
+.suite{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:16px;font:500 13px 'Space Grotesk'}
+.prec{color:#8d8996}
+.prec:hover{color:#ECE8DF}
+.suiv{display:flex;gap:10px;align-items:center;justify-self:end;text-align:right}
+.rond{background:var(--accent-ui,var(--accent));color:#121115;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.suiv:hover .rond{transform:translateX(4px)}
+
+.poeme,.titre,.titre-petit{animation:entree .5s ease both}
+@keyframes entree{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Mobile */
+@media (max-width:800px){
+  .page{grid-template-columns:1fr}
+  .panneau{position:relative;height:auto;padding:24px}
+  .panneau-haut{gap:40px}
+  .titre{font-size:clamp(110px,34vw,190px)}
+  .titre.moyen{font-size:clamp(90px,27vw,160px)}
+  .titre.long{font-size:clamp(70px,21vw,120px)}
+  .titre-petit{font-size:clamp(30px,9vw,44px)}
+  .meta{margin-top:40px}
+  .lecture{padding:24px;min-height:auto}
+  .poeme{font-size:23px;padding:40px 0}
+}
+
+/* Ajouts : titres longs, visuel, images, post d'origine */
+.titre.moyen{font-size:clamp(130px,19vw,300px)}
+.titre.long{font-size:clamp(90px,11vw,170px)}
+.poeme.en-images{max-width:480px;gap:20px}
+.poeme.en-images img{display:block;width:100%;height:auto}
+.visuel{margin:0;position:sticky;top:32px}
+.visuel img{display:block;max-width:100%;max-height:78vh;height:auto}
+.visuel figcaption{margin-top:12px;font:400 12px/1.5 'JetBrains Mono';letter-spacing:.04em;color:#8d8996}
+.visuel figcaption a{text-decoration:underline;text-decoration-color:#3a3842;text-underline-offset:3px}
+.visuel figcaption a:hover{color:var(--accent-ui,var(--accent));text-decoration-color:currentColor}
+.voir-post{margin-top:32px;font:500 12px 'JetBrains Mono';letter-spacing:.06em;text-transform:uppercase;color:#8d8996;border-bottom:1px solid #3a3842;padding-bottom:2px}
+.voir-post:hover{color:var(--accent-ui,var(--accent));border-color:var(--accent-ui,var(--accent))}
+.original{position:fixed;inset:0;background:rgba(18,17,21,.97);z-index:20;overflow:auto;padding:64px 24px}
+.original[hidden]{display:none}
+.original-images{display:flex;flex-direction:column;align-items:center;gap:24px}
+.original-images img{display:block;max-width:min(560px,100%);height:auto}
+.fermer-original{position:fixed;top:24px;right:32px;font:500 13px 'Space Grotesk';color:#ECE8DF;z-index:21}
+html{scrollbar-width:thin;scrollbar-color:#3a3842 transparent}
+::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background:#3a3842;border-radius:3px}::-webkit-scrollbar-track{background:transparent}
+:focus-visible{outline:2px solid var(--accent-ui,var(--accent));outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.poeme,.titre{animation:none}}
+@media (max-width:1100px){.corps.avec-visuel{grid-template-columns:minmax(0,1fr)}.visuel{position:static;max-width:520px}}
+
+/* Bande des catégories */
+.categories{display:flex;gap:6px;flex-wrap:wrap}
+.categories button{padding:7px 14px;border:1px solid #3a3842;border-radius:999px;color:#8d8996;transition:color .2s,border-color .2s;display:flex;align-items:center;gap:8px}
+.categories button::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.categories button:hover{color:#ECE8DF;border-color:#5a5764}
+.categories button[aria-current="true"]{color:#121115;background:var(--c);border-color:var(--c)}
+.categories button[aria-current="true"]::before{background:#121115}
+
+/* Bouton et tiroir */
+.btn-liste{display:flex;align-items:center;gap:10px;border:1px solid #3a3842;border-radius:999px;padding:8px 16px;transition:border-color .2s}
+.btn-liste:hover{border-color:var(--accent-ui,var(--accent))}
+.burger{width:14px;height:10px;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor;position:relative}
+.burger::after{content:"";position:absolute;left:0;right:0;top:50%;border-top:1.5px solid currentColor;transform:translateY(-50%)}
+.voile{position:fixed;inset:0;background:rgba(10,9,12,.55);z-index:14}
+.voile[hidden]{display:none}
+.tiroir{position:fixed;top:0;left:0;bottom:0;width:min(360px,88vw);background:#18171c;z-index:15;display:flex;flex-direction:column;
+  padding:28px 0 24px;transform:translateX(-100%);transition:transform .35s cubic-bezier(.2,.7,.2,1);visibility:hidden;border-right:1px solid #26242c}
+.tiroir.ouvert{transform:none;visibility:visible}
+.tiroir-haut{display:flex;justify-content:space-between;align-items:center;padding:0 28px;margin-bottom:22px}
+.tiroir-serie{font:500 12px 'JetBrains Mono';letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.tiroir-serie::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}
+.tiroir .fermer{font:500 13px 'Space Grotesk';color:#ECE8DF}
+.tri{display:flex;gap:18px;padding:0 28px 14px;font:500 13px 'Space Grotesk';color:#8d8996;border-bottom:1px solid #26242c}
+.tri button.actif{color:#ECE8DF;border-bottom:1.5px solid #ECE8DF}
+.tiroir-liste{list-style:none;margin:0;padding:14px 0 24px;overflow-y:auto;flex:1}
+.tiroir-liste a{display:block;padding:6px 28px;font:400 22px/1.25 'Cormorant Garamond',Georgia,serif;color:#b9b4c2;border-left:2px solid transparent}
+.tiroir-liste a:hover{color:#ECE8DF}
+.tiroir-liste a[aria-current="true"]{color:var(--c);border-left-color:var(--c);font-style:italic}
+@media (prefers-reduced-motion:reduce){.tiroir{transition:none}}
+@media (max-width:800px){.barre{gap:12px}.categories button{padding:6px 11px}}
+
+@media (max-width:800px){
+  .titre{font-size:clamp(110px,34vw,190px)}
+  .titre.moyen{font-size:clamp(90px,27vw,160px)}
+  .titre.long{font-size:clamp(70px,21vw,120px)}
+}
+
+/* Page d'accueil */
+.accueil{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(28px,5vh,48px);padding:32px 24px;text-align:center;animation:entree .6s ease both}
+.accueil[hidden],.page[hidden]{display:none}
+.accueil-logo{margin:0;font:700 clamp(56px,9vw,120px)/1 'Space Grotesk',system-ui,sans-serif;letter-spacing:-.04em;color:#F4F0E6}
+.accueil-logo .point{color:#8d8996}
+.accueil-categories{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;font:500 15px 'Space Grotesk',system-ui,sans-serif}
+.accueil-categories a{display:flex;align-items:center;gap:10px;color:#8d8996;padding:6px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.accueil-categories a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.accueil-categories a:hover{color:#ECE8DF;border-bottom-color:var(--c)}
+
+/* Bas de page : catégorie du poème et passages de catégorie */
+.prec,.suiv-texte{display:flex;flex-direction:column;gap:4px}
+.saut{font:500 11px 'JetBrains Mono';letter-spacing:.05em;text-transform:uppercase;color:var(--c);white-space:nowrap}
+.change .saut{font-weight:700}
+.saut:empty{display:none}
+.suiv.change .rond{background:var(--c)}
+.cat-pied{justify-self:center;display:flex;align-items:center;gap:8px;font:500 11px 'JetBrains Mono';letter-spacing:.06em;text-transform:uppercase;color:#8d8996;padding:6px 0;border-bottom:1px solid transparent}
+.cat-pied::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.cat-pied:hover{color:#ECE8DF;border-bottom-color:var(--c)}
+@media (max-width:800px){.suite{grid-template-columns:1fr 1fr}.cat-pied{grid-column:1/-1;grid-row:1;justify-self:start;margin-bottom:8px}}
+
+/* Tiroir par catégories */
+.tiroir-titre{font:500 12px 'JetBrains Mono';letter-spacing:.06em;text-transform:uppercase;color:#ECE8DF}
+.tiroir-cats{overflow-y:auto;flex:1;padding:8px 0 24px}
+.cat{border-bottom:1px solid #26242c}
+.cat-tete{width:100%;display:flex;align-items:center;gap:12px;padding:16px 28px;font:500 15px 'Space Grotesk';color:#ECE8DF;text-align:left}
+.cat-tete::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.cat-nom{flex:1}
+.cat-nb{font:400 11px 'JetBrains Mono';color:#8d8996}
+.chevron{width:8px;height:8px;border-right:1.5px solid #8d8996;border-bottom:1.5px solid #8d8996;transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.cat.ouverte .chevron{transform:rotate(-135deg) translateY(-1px)}
+.cat-tete:hover .cat-nom{color:var(--c)}
+.cat .tiroir-liste{overflow:visible;flex:none;padding:0 0 16px}
+.cat .tiroir-liste[hidden]{display:none}
+
+/* Forme libre (mises en page éclatées) */
+.poeme pre.libre{margin:0;font:inherit;white-space:pre;overflow-x:auto;max-width:100%;line-height:1.45}
+.poeme pre.libre s{text-decoration-thickness:1.5px}
+.corps{grid-template-columns:minmax(0,1fr) !important}
+.poeme:has(pre.libre){max-width:none}
+
+/* Visuel / œuvre : caché à droite, sort avec la flèche */
+.visuel{position:fixed !important;top:0;right:0;bottom:0;width:min(560px,92vw);max-width:none !important;margin:0;background:#18171c;z-index:16;
+  padding:72px 32px 32px;overflow-y:auto;transform:translateX(100%);visibility:hidden;transition:transform .4s cubic-bezier(.2,.7,.2,1),visibility .4s;border-left:1px solid #26242c}
+.visuel.ouvert{transform:none;visibility:visible}
+.visuel img{max-height:none;width:100%}
+.btn-visuel{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:17;display:flex;flex-direction:column;align-items:center;gap:12px;
+  background:var(--accent-ui,var(--accent));color:#121115;padding:18px 10px;border-radius:12px 0 0 12px;font:500 12px 'Space Grotesk';letter-spacing:.04em;
+  writing-mode:vertical-rl;transition:right .4s cubic-bezier(.2,.7,.2,1)}
+.btn-visuel[hidden]{display:none}
+.btn-visuel .fleche{writing-mode:horizontal-tb;font-size:16px;transition:transform .3s}
+.btn-visuel.ouvert{right:min(560px,92vw)}
+.btn-visuel.ouvert .fleche{transform:rotate(180deg)}
+@media (prefers-reduced-motion:reduce){.visuel,.btn-visuel{transition:none}}
+
+/* Texte centré (Tarot) */
+.poeme.centre{text-align:center;margin-left:auto;margin-right:auto}
+.corps.centre{justify-items:center}
+
+/* Menu déroulant des catégories */
+.barre{position:relative}
+.menu-cat{position:absolute;top:calc(100% + 10px);right:0;width:min(640px,100%);background:#18171c;border:1px solid #2c2a33;border-radius:16px;
+  padding:20px 24px 22px;z-index:12;box-shadow:0 18px 50px rgba(0,0,0,.45);animation:entree .2s ease both}
+.menu-cat[hidden]{display:none}
+.menu-cat::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+.menu-tete{display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #2c2a33}
+.menu-tete::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}
+.menu-nom{font:500 12px 'JetBrains Mono';letter-spacing:.06em;text-transform:uppercase;color:#ECE8DF;flex:1}
+.menu-nb{font:400 11px 'JetBrains Mono';color:#8d8996}
+.menu-cat ol{list-style:none;margin:0;padding:0;column-width:170px;column-gap:24px;max-height:60vh;overflow-y:auto}
+.menu-cat li{break-inside:avoid}
+.menu-cat a{display:block;padding:4px 0;font:400 19px/1.25 'Cormorant Garamond',Georgia,serif;color:#b9b4c2}
+.menu-cat a:hover{color:var(--c)}
+.menu-cat a[aria-current="true"]{color:var(--c);font-style:italic}
+.categories button[aria-expanded="true"]:not([aria-current="true"]){color:#ECE8DF;border-color:var(--c)}
+.corps.centre .col-texte{display:flex;flex-direction:column;align-items:center}
+
+/* Chapeau : courte introduction au-dessus du poème */
+.poeme .chapeau{font-style:italic;font-size:.68em;line-height:1.5;color:var(--accent-ui,var(--accent));opacity:.9;margin-bottom:12px;padding-bottom:20px;border-bottom:1px solid #2c2a33;max-width:36ch}
