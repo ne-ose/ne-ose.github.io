@@ -66,19 +66,15 @@
     if (p.texte && p.texte.trim() && p.forme === "libre") {
       $("poeme").classList.remove("en-images");
       $("poeme").innerHTML = `<pre class="libre">${esc(p.texte.replace(/^\n+|\s+$/g, "")).replace(/~~(.+?)~~/g, "<s>$1</s>")}</pre>`;
-      $("voir-post").hidden = !originaux.length;
     } else if (p.texte && p.texte.trim()) {
       $("poeme").classList.remove("en-images");
       $("poeme").innerHTML = (p.chapeau ? `<p class="chapeau">${esc(p.chapeau.trim()).replace(/\n/g, "<br>")}</p>` : "") + p.texte.trim().split(/\n\s*\n/).map(st =>
         "<p>" + st.split("\n").map(v => p.vers_accent && v.trim() === p.vers_accent.trim() ? `<em>${esc(v)}</em>` : esc(v)).join("<br>") + "</p>"
       ).join("");
-      $("voir-post").hidden = !originaux.length;
     } else {
       $("poeme").classList.add("en-images");
       $("poeme").innerHTML = originaux.map((s, k) => `<img src="${esc(s)}" alt="${esc(p.titre)}${originaux.length > 1 ? ", page " + (k + 1) : ""}">`).join("");
-      $("voir-post").hidden = true;
     }
-    $("original-images").innerHTML = originaux.map((s, k) => `<img src="${esc(s)}" alt="${esc(p.titre)}, post d'origine${originaux.length > 1 ? ", page " + (k + 1) : ""}" loading="lazy">`).join("");
 
     const legende = p.legende ? `<figcaption>${p.lien ? `<a href="${esc(p.lien)}" target="_blank" rel="noopener">${esc(p.legende)}</a>` : esc(p.legende)}</figcaption>` : "";
     $("visuel").innerHTML = p.image ? `<img src="${esc(p.image)}" alt="${esc(p.legende || "Visuel accompagnant " + p.titre)}">${legende}` : "";
@@ -170,7 +166,7 @@
     $("btn-visuel").setAttribute("aria-expanded", v);
   }
   $("btn-visuel").onclick = () => visuel(!$("visuel").classList.contains("ouvert"));
-  const voirOriginal = v => { $("original").hidden = !v; document.body.style.overflow = v ? "hidden" : ""; if (v) $("original").scrollTop = 0; };
+  const voirOriginal = () => {};
 
   $("btn-liste").onclick = () => tiroir(!tiroirOuvert());
   $("fermer").onclick = () => tiroir(false);
@@ -213,14 +209,11 @@
     tri = b.dataset.tri; try { localStorage.setItem("tri", tri); } catch (e) {}
     remplirTiroir();
   });
-  $("voir-post").onclick = () => voirOriginal(true);
-  $("fermer-original").onclick = () => voirOriginal(false);
-  $("original").addEventListener("click", e => { if (e.target === $("original")) voirOriginal(false); });
 
   document.addEventListener("keydown", e => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); tiroir(!tiroirOuvert()); }
     else if (e.key === "Escape") { tiroir(false); voirOriginal(false); visuel(false); menuCat(null); }
-    else if (!$("original").hidden || tiroirOuvert() || !$("accueil").hidden) return;
+    else if (tiroirOuvert() || !$("accueil").hidden) return;
     else if (e.key === "ArrowRight") location.hash = $("suiv").getAttribute("href");
     else if (e.key === "ArrowLeft") location.hash = $("prec").getAttribute("href");
   });
