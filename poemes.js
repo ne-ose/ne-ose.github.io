@@ -197,7 +197,7 @@ Destin rigide`
   },
   {
     serie: "octobre-2025", titre: "Couronne", syllabes: "Cou|ronne", fond: "#52325A", accent: "#CDA45E", date: "2025-10-03",
-    originaux: ["images/octobre-2025/couronne-1.webp"],
+    originaux: ["couronne.webp"],
     vers_accent: "",
     texte: ``
   },
