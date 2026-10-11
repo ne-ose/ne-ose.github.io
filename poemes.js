@@ -173,7 +173,7 @@ Dépossédés de force,
 primitive rétribution.`
   },
   {
-    serie: "tarot", titre: "Le diable", date: "2026-10-09", centre: true,
+    serie: "tarot", titre: "Le diable", date: "2026-10-10", centre: true,
     originaux: ["images/tarot/la-justice-1.webp"],
     vers_accent: "",
     texte: `La joue écrasée contre les barres
@@ -186,6 +186,27 @@ et hors de portée.
 Prostré dans une cage
 En expansion perpétuelle, 
 ouverte pourtant.`
+  },
+  {
+    serie: "tarot", titre: "Trois de bâtons (envers)", date: "2026-10-11", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `La curiosité lui fit toujours défaut.
+
+Enfant, quand les autres grimpaient haut
+pour contempler l'horizon,
+il préférait s'asseoir contre le tronc.
+
+Jeune homme,
+lorsque les uns rêvaient
+d'aventures, impatients.
+Il ne cherchait rien, 
+ne se trouvait pas non plus.
+
+Il ne fut pas surpris 
+quand un jour il apprit,
+que son point culminant
+avait la taille d'une fourmi.`
   },
   {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
