@@ -173,6 +173,21 @@ Dépossédés de force,
 primitive rétribution.`
   },
   {
+    serie: "tarot", titre: "Le diable", date: "2026-10-09", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `La joue écrasée contre les barres
+Il se démène.
+Plus de liens,
+il s'en est occupé.
+Devant, autre chose
+pas sûr, 
+et hors de portée.
+Prostré dans une cage
+En expansion perpétuelle, 
+ouverte pourtant.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
