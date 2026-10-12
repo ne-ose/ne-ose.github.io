@@ -209,6 +209,27 @@ que son point culminant
 avait la taille d'une fourmi.`
   },
   {
+    serie: "tarot", titre: "Valet de coupes", date: "2026-10-12", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Plutôt espiègles, ils voguent.
+Ils ne nagent pas.
+
+Ceux-là oui :
+Trois petits loups
+Trois petits loups 
+Trois petits loups, loups, loups
+Loupiottes, Loupiottes, Loupiottes, 
+Ôtes, ôtes. 
+
+Ôtez-vous ces idées raisonnables,
+Sujet sensible ?
+Ôtez-vous, vous, vous.
+Pas besoin de profondeur
+pour faire des merveilles. 
+Ôtez-vous , oui vous.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
