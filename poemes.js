@@ -229,6 +229,28 @@ Pas besoin de profondeur
 pour faire des merveilles. 
 Ôtez-vous , oui vous.`
   },
+   {
+    serie: "tarot", titre: "La tempérance", date: "2026-10-13", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Quand la nuit, la peine, ou l'envie
+comblent, charrient les substances.
+Frôlent les routes, toutes fausses, 
+en torrent. 
+
+Après l'aléa, l'accalmie coupable,
+mais rassérénée.
+Se préparer, 
+avant de se rejeter dans le courant,
+et déborder.
+
+Un jour,
+sans trop savoir pour qui.
+On y croit plus tellement,
+L'embouchure : calme et remous.
+L'équilibre des deux.
+Subir, non.`
+  },
   {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
