@@ -252,6 +252,15 @@ L'équilibre des deux.
 Subir, non.`
   },
   {
+    serie: "tarot", titre: "Valet de bâtons", date: "2026-10-14", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Explorer les possibilités.
+Si je les jette dans le désert,
+deviendront-elles rose des sables,
+ou une oasis amère ?`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
