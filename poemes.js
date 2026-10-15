@@ -259,7 +259,7 @@ Subir, non.`
 On vint poser la couronne sur sa tête. 
 Elle lui tomba au milieu du front.
 Le lendemain, au niveau du nez, sur l'arête.
-Puis au niveau de la bouche, comme une muselière.
+Puis au niveau de la bouche, une muselière.
 A la fin de la semaine, c'était un collier. 
 Un bien étrange phénomène.`
   },
