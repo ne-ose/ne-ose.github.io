@@ -252,6 +252,18 @@ L'équilibre des deux.
 Subir, non.`
   },
   {
+    serie: "tarot", titre: "Roi de coupes (envers)", date: "2026-10-15", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Alors qu'on préparait sa Majesté,
+On vint poser la couronne sur sa tête. 
+Elle lui tomba au milieu du front.
+Le lendemain, au niveau du nez, sur l'arête.
+Puis au niveau de la bouche, comme une muselière.
+A la fin de la semaine, c'était un collier. 
+Un bien étrange phénomène.`
+  },
+  {
     serie: "tarot", titre: "Valet de bâtons", date: "2026-10-14", centre: true,
     originaux: ["images/tarot/la-justice-1.webp"],
     vers_accent: "",
