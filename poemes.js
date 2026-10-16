@@ -273,6 +273,20 @@ deviendront-elles rose des sables,
 ou une oasis amère ?`
   },
   {
+    serie: "tarot", titre: "L'ermite", date: "2026-10-16", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Il aimerait regarder l'extérieur.
+Chercher les sphères.
+La poussière du rideau, 
+qu'il ne tire jamais,
+l'en empêche.
+A cette heure, 
+il verrait des lucioles 
+et les confondrait surement
+avec des phares.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
