@@ -252,6 +252,15 @@ L'équilibre des deux.
 Subir, non.`
   },
   {
+    serie: "tarot", titre: "Valet de bâtons", date: "2026-10-14", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Explorer les possibilités.
+Si je les jette dans le désert,
+deviendront-elles rose des sables,
+ou une oasis amère ?`
+  },
+  {
     serie: "tarot", titre: "Roi de coupes (envers)", date: "2026-10-15", centre: true,
     originaux: ["images/tarot/la-justice-1.webp"],
     vers_accent: "",
@@ -264,16 +273,7 @@ A la fin de la semaine, c'était un collier.
 Un bien étrange phénomène.`
   },
   {
-    serie: "tarot", titre: "Valet de bâtons", date: "2026-10-14", centre: true,
-    originaux: ["images/tarot/la-justice-1.webp"],
-    vers_accent: "",
-    texte: `Explorer les possibilités.
-Si je les jette dans le désert,
-deviendront-elles rose des sables,
-ou une oasis amère ?`
-  },
-  {
-    serie: "tarot", titre: "L'ermite", date: "2026-10-16", centre: true,
+    serie: "tarot", titre: "L'ermite (envers)", date: "2026-10-16", centre: true,
     originaux: ["images/tarot/la-justice-1.webp"],
     vers_accent: "",
     texte: `Il aimerait regarder l'extérieur.
