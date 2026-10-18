@@ -302,6 +302,21 @@ Quelqu'un cloue la porte.
 Il se retourne. 
 S'enfuit.`
   },
+   {
+    serie: "tarot", titre: "L'étoile", date: "2026-10-18", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Je viens la nuit
+en silence,
+attraper tes voeux.
+
+Les porter calmement,
+près de la rivière.
+
+Le courant les guide.
+Tu seras exaucé,
+j'y veille.`
+  },
   {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
