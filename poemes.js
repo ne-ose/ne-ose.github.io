@@ -287,6 +287,22 @@ et les confondrait surement
 avec des phares.`
   },
   {
+    serie: "tarot", titre: "Le chariot (envers)", date: "2026-10-17", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Des coups à la porte.
+Il se tourne 
+Tire la couverture
+S'enfouit.
+Des bruits de marteau.
+Toc
+Toc
+Toc
+Quelqu'un cloue la porte.
+Il se retourne. 
+S'enfuit.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
