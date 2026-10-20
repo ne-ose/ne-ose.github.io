@@ -330,6 +330,21 @@ Je suis un cheval leur dit il.
 Et d'un coup de sabot,
 fit voler leurs dents.`
   },
+    {
+    serie: "tarot", titre: "Dix de bâtons", date: "2026-10-20", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Un pas après l'autre.
+Puis cent.
+Sur un chemin tortueux.
+1000.
+Chargé de labeur,
+puis sans élan.
+
+Se rajouter une jambe.
+Pour avancer plus vite,
+ou marcher dans une crotte de chien.`
+  },
   {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
