@@ -346,6 +346,23 @@ Pour avancer plus vite,
 ou marcher dans une crotte de chien.`
   },
   {
+    serie: "tarot", titre: "Quatre d'épées (envers)", date: "2026-10-21", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `La main remue, pressée.
+Il tire une idée,
+pas la bonne.
+La jette,
+derrière lui elles s'amoncèlent.
+Il n'en a que des mauvaises.
+
+Une masse sous les doigts.
+Ah ! 
+Non.
+De bons sentiments. 
+Il n'en veut pas.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
