@@ -375,6 +375,18 @@ Si on ne le voit pas,
 il peut être et ne meurt jamais.`
   },
   {
+    serie: "tarot", titre: "Sept de coupes", date: "2026-10-23", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Elle ouvre le cabinet
+jette un oeil en arrière.
+Curare ? 
+Arsenic ?
+Non. Ciguë.
+Vous disiez donc mon bon monsieur ?
+Tout sauf retourner auprès de votre femme ?`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
