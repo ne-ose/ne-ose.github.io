@@ -363,6 +363,18 @@ De bons sentiments.
 Il n'en veut pas.`
   },
   {
+    serie: "tarot", titre: "Le pendu", date: "2026-10-22", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Le silence.
+L'obscurité.
+Non juste l'absence de lumière.
+Attendre entre.
+Franchir ou pas.
+Si on ne le voit pas, 
+il peut être et ne meurt jamais.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
