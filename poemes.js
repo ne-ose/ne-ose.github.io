@@ -401,6 +401,19 @@ C'est un noeud coulant.
 Tant pis, il restera là.`
   },
   {
+    serie: "tarot", titre: "Valet de deniers", date: "2026-10-25", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Elle étudie, studieuse.
+à l'écart du monde.
+Truculence, 
+C'est le mot du jour, 
+elle ne l'aime pas vraiment.
+C'est l'heure. 
+Elle referme son livre, 
+et enfile son costume de chair.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
