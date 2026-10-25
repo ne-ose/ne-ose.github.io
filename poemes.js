@@ -387,6 +387,20 @@ Vous disiez donc mon bon monsieur ?
 Tout sauf retourner auprès de votre femme ?`
   },
   {
+    serie: "tarot", titre: "Trois d'épées (envers)", date: "2026-10-24", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Faire sortir un coeur
+brisé tant de fois,
+remonté sans instructions.
+Difforme, il ne passe plus
+à aucun endroit.
+Elle tire, tire, tire.
+Pour se libérer
+C'est un noeud coulant.
+Tant pis, il restera là.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
