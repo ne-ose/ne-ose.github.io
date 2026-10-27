@@ -428,6 +428,21 @@ Il y en naitra 5 encore, puis 100 j'espère.
 Enfin, je laisse ça au destin,
 Je suis déjà assez espiègle.`
   },
+   {
+    serie: "tarot", titre: "Les amoureux", date: "2026-10-27", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Je veux me réveiller dans tes bras.
+Boire des cafés tièdes, 
+subir des matins banals, 
+espérer nos repas.
+Je veux qu'on s'ennuie ensemble, 
+les jours de pluie, ceux où il fait froid.
+Je veux te manquer, je veux que tu manques,
+que jamais tu ne mentes, 
+ou alors peut être, 
+mais juste une ou deux fois.`
+  },
   {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
