@@ -414,6 +414,21 @@ Elle referme son livre,
 et enfile son costume de chair.`
   },
   {
+    serie: "tarot", titre: "Le roue de la fortune", date: "2026-10-26", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Alors voilà que je vous crée, 
+tant bien que mal.
+Non quand même plus de bien que de mal, 
+ou est ce l'inverse ?
+Je peux retourner les mots, 
+malléables, au centre de la fabrique.
+Je sais déjà ce qu'il va se passer.
+Il y en naitra 5 encore, puis 100 j'espère.
+Enfin, je laisse ça au destin,
+Je suis déjà assez espiègle.`
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
