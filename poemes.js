@@ -443,6 +443,21 @@ que jamais tu ne mentes,
 ou alors peut être, 
 mais juste une ou deux fois.`
   },
+   {
+    serie: "tarot", titre: "Deux de deniers", date: "2026-10-28", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `A trop vouloir bien faire
+on finit par s'en faire,
+une raison.
+multitâche, 
+non, dépassé.
+Je vous laisse à vos sables mouvants,
+aux syllabes émouvantes,
+tout en silence pourtant.
+Rien n'est satisfaisant, 
+sauf vous couler dans du béton.`
+  },
   {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
