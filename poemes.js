@@ -450,7 +450,7 @@ mais juste une ou deux fois.`
     texte: `A trop vouloir bien faire
 on finit par s'en faire,
 une raison.
-multitâche, 
+Multitâche, 
 non, dépassé.
 Je vous laisse à vos sables mouvants,
 aux syllabes émouvantes,
