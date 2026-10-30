@@ -459,6 +459,18 @@ Rien n'est satisfaisant,
 sauf vous couler dans du béton.`
   },
   {
+    serie: "tarot", titre: "Cavalier de bâtons", date: "2026-10-29", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Pour être parfait :
+Avoir bon cœur
+Être volontaire, 
+développer son esprit, 
+son corps et ses capacités.
+Enfin, si on naît homme, 
+ça ne compte pas. `
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
