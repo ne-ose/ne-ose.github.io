@@ -463,7 +463,7 @@ sauf vous couler dans du béton.`
     originaux: ["images/tarot/la-justice-1.webp"],
     vers_accent: "",
     texte: `Pour être parfait :
-Avoir bon cœur
+Avoir bon cœur.
 Être volontaire, 
 développer son esprit, 
 son corps et ses capacités.
