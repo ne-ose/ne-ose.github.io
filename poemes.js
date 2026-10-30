@@ -471,6 +471,23 @@ Enfin, si on naît homme,
 ça ne compte pas. `
   },
   {
+    serie: "tarot", titre: "Huit de coupes (envers)", date: "2026-10-30", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Un matin, le matelas de plume
+devient lourd comme du plomb, 
+de berceau à cercueil, 
+les nuits blanchissent.
+
+Les goûts changent,
+fades, ingrats.
+De mélodies rejouées
+en voix stridentes.
+
+Se lever,
+et partir ? `
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
