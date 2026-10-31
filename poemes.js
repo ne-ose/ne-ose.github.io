@@ -488,6 +488,17 @@ Se lever,
 et partir ? `
   },
   {
+    serie: "tarot", titre: "Huit d'épées (envers)", date: "2026-10-31", centre: true,
+    originaux: ["images/tarot/la-justice-1.webp"],
+    vers_accent: "",
+    texte: `Elvis discute avec Madonna dans la cuisine.
+Sur le balcon un cowboy fume une cigarette,
+une citrouille renverse son verre.
+Quelqu'un marche sur mes bandelettes, 
+je trébuche, manque de tomber dans mon sarcophage.
+On refait ça l'année prochaine ? `
+  },
+  {
     serie: "octobre-2025", titre: "Moustache", syllabes: "Mous|tache", fond: "#90ABCB", accent: "#562F32", date: "2025-10-01",
     originaux: ["images/octobre-2025/moustache-1.webp"],
     vers_accent: "",
