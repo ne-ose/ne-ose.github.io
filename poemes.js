@@ -2010,6 +2010,18 @@ Des billes ardentes
 rougeoient dans l'ombre.`
   },
   {
+    serie: "inktober", titre: "Relique", date: "2026-10-10",
+    originaux: ["images/52/danse-1.webp"],
+    vers_accent: "",
+    texte: `Une veste usée.
+Dans la poche un mouchoir fragmenté.
+Elle le serre.
+Sent : plus rien vraiment,
+une trace légère de ce parfum, 
+qu'elle n'aimait pas vraiment.
+Elle plie la veste et la range soigneusement.`
+  },
+  {
     serie: "autres", titre: "Mon mur", date: "2025-11-16",
     originaux: ["images/autres/mon-mur-1.webp", "images/autres/mon-mur-2.webp"],
     vers_accent: "",
