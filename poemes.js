@@ -2041,6 +2041,34 @@ C'était juste une chèvre.`
 si la tête dodeline
 il pourrait la perdre`
   },
+    {
+    serie: "inktober", titre: "Soigné", date: "2026-11-19",
+    originaux: ["images/52/danse-1.webp"],
+    vers_accent: "",
+    texte: `Une minuscule tache de sang, 
+il l'essuie du bout du doigt.
+Aucune marque sur son col,
+tant mieux.
+Sous la bâche le corps respire,
+encore.
+Une trace sur la manche.
+Il souffle.`
+  },
+   {
+    serie: "inktober", titre: "Cookie", date: "2026-11-01",
+    originaux: ["images/52/danse-1.webp"],
+    vers_accent: "",
+    texte: `Gloutons sans répit, 
+jamais repus.
+Les mains à la bouche
+glissent vers l'œsophage.
+Gaver les bâfreurs.
+
+Pétrissant les viscères, 
+retournant les boyaux,
+une terrible crise de foie, 
+pour les boustifailleurs.`
+  },
   {
     serie: "autres", titre: "Mon mur", date: "2025-11-16",
     originaux: ["images/autres/mon-mur-1.webp", "images/autres/mon-mur-2.webp"],
