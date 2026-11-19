@@ -2010,7 +2010,7 @@ Des billes ardentes
 rougeoient dans l'ombre.`
   },
   {
-    serie: "inktober", titre: "Relique", date: "2026-10-10",
+    serie: "inktober", titre: "Relique", date: "2026-11-03",
     originaux: ["images/52/danse-1.webp"],
     vers_accent: "",
     texte: `Une veste usée.
@@ -2020,6 +2020,26 @@ Sent : plus rien vraiment,
 une trace légère de ce parfum, 
 qu'elle n'aimait pas vraiment.
 Elle plie la veste et la range soigneusement.`
+  },
+  {
+    serie: "inktober", titre: "Bélier", date: "2026-11-16",
+    originaux: ["images/52/danse-1.webp"],
+    vers_accent: "",
+    texte: `Des cornes et des sabots fourchus.
+L'audience attend l'horrible bête.
+"Elle a encorné un fermier !", dit-on,
+"elle a les yeux d'un démon."
+Elle arrive soudain sur la scène.
+Un silence pèse dans l'assemblée.
+C'était juste une chèvre.`
+  },
+  {
+    serie: "inktober", titre: "Dégingandé", date: "2026-11-19",
+    originaux: ["images/52/danse-1.webp"],
+    vers_accent: "",
+    texte: `Trop de questions
+si la tête dodeline
+il pourrait la perdre`
   },
   {
     serie: "autres", titre: "Mon mur", date: "2025-11-16",
